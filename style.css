@@ -1,0 +1,153 @@
+/* Importation des polices */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Styles d'en-tête */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Section principale */
+main {
+    margin: 20px;
+}
+
+/* Galerie de produits */
+.product-section {
+    display: flex;
+    gap: 20px;
+}
+
+.product-gallery {
+    position: relative;
+    width: 50%;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Informations sur le produit */
+.product-info {
+    width: 50%;
+}
+
+.product-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #e74c3c;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+}
+
+/* Section des avis */
+.reviews-section {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Section des produits associés */
+.related-section {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.related-item {
+    text-align: center;
+}
+
+.related-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Pseudo-classes pour les liens */
+a:focus {
+    outline: 2px solid #333;
+}
+
+/* Styles pour les boutons */
+button:focus {
+    outline: 2px solid #e74c3c;
+}
+
+/* Mise en page adaptative */
+@media (max-width: 768px) {
+    .product-section {
+        flex-direction: column;
+    }
+
+    .product-gallery, .product-info {
+        width: 100%;
+    }
+
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+}
